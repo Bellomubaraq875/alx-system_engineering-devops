@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#Thai script displays the PID, along with the progess name
+#of processes whoses name comtain the word bash
+pgrep -l bash
