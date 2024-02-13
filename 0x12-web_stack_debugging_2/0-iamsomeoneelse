@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# this script checks if the software is being run by another user
+
+if [ $# -ne 1 ]; then
+  echo "$0 <username>"
+  exit 1
+fi
+sudo -u "$1" whoami
